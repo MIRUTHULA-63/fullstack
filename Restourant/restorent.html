@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Food Delivery</h1>
+      <div class="cart">
+        <span id="cart-count">0</span>
+        <img src="images/cart.png" alt="Cart" class="cart-icon" />
+      </div>
+    </header>
+
+    <!-- Restaurant Listing -->
+    <section class="restaurant-list">
+      <h2>Restaurants</h2>
+      <div class="restaurants">
+        <!-- Restaurant 1 -->
+        <div class="restaurant-card" onclick="viewMenu('restaurant1')">
+          <img
+            src="C:\Users\mirut\OneDrive\Pictures\rest2.jpeg"
+            alt="Restaurant 1"
+          />
+          <h3>Restaurant 1</h3>
+        </div>
+        <!-- Restaurant 2 -->
+        <div class="restaurant-card" onclick="viewMenu('restaurant2')">
+          <img
+            src="C:\Users\mirut\OneDrive\Pictures\rest image.avif"
+            alt="Restaurant 2"
+          />
+          <h3>Restaurant 2</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section (hidden initially) -->
+    <section class="menu-list" id="menu-section">
+      <h2>Menu</h2>
+      <div class="menu-items">
+        <!-- Menu items will be dynamically inserted here -->
+      </div>
+      <button class="back-button" onclick="goBack()">
+        Back to Restaurants
+      </button>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart-section">
+      <h2>Shopping Cart</h2>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <h3>Total: $<span id="cart-total">0</span></h3>
+      <button class="checkout-button">Checkout</button>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
